@@ -1,0 +1,4 @@
+nomor_nasabah,nama_nasabah,email
+123, Nana Febriana, nana@gmail.com
+124, Sandi Oktavian, sandi@gmail.com
+125, Dwi Retno, dwinotari@gmail.com
