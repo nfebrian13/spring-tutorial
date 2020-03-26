@@ -18,9 +18,9 @@ public class DemoInsertNasabah {
 
 		// Data yang mau diinsert
 		Nasabah n = new Nasabah();
-		n.setNomor("124");
-		n.setNama("Dwi Retno Utari");
-		n.setEmail("dwinotari@gmail.com");
+		n.setNomor("125");
+		n.setNama("Sandi Oktavian");
+		n.setEmail("sandi@gmail.com");
 
 		// insert menggunakan DAO
 		dbNasabah.connect();
