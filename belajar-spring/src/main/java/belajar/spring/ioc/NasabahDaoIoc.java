@@ -7,6 +7,12 @@ public class NasabahDaoIoc {
 	public NasabahDaoIoc() {
 	}
 
+	// constructor injection
+	public NasabahDaoIoc(KoneksiDatabase koneksiDatabase) {
+		super();
+		this.koneksiDatabase = koneksiDatabase;
+	}
+
 	// setter injection
 	public void setKoneksiDatabase(KoneksiDatabase koneksiDatabase) {
 		this.koneksiDatabase = koneksiDatabase;

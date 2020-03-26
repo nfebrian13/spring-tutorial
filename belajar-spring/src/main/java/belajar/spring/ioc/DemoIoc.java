@@ -4,14 +4,22 @@ public class DemoIoc {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		NasabahDaoIoc nd = new NasabahDaoIoc();
-
+		
+		/* constructor injection */
 		KoneksiDatabase koneksiDatabase = new KoneksiDatabase();
 		koneksiDatabase.setUrl("jdbc:postgresql://localhost/bank");
 		koneksiDatabase.setUsername("postgres");
-		koneksiDatabase.setPassword("postgres");
+		koneksiDatabase.setPassword("postgres"); 
+		NasabahDaoIoc nd = new NasabahDaoIoc(koneksiDatabase);
+
+		/* setter injection
+		KoneksiDatabase koneksiDatabase = new KoneksiDatabase();
+		koneksiDatabase.setUrl("jdbc:postgresql://localhost/bank");
+		koneksiDatabase.setUsername("postgres");
+		koneksiDatabase.setPassword("postgres"); */
 		
-		nd.setKoneksiDatabase(koneksiDatabase);
+		// setter injection
+		// nd.setKoneksiDatabase(koneksiDatabase);
 		nd.simpan();
 	}
 
