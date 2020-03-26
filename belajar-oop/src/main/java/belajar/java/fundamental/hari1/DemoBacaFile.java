@@ -9,8 +9,8 @@ import training.internet.banking.helper.NasabahFileImporter;
 public class DemoBacaFile {
 
 	public static void main(String[] args) throws Exception {
+		
 		NasabahFileImporter ni = new NasabahFileImporter("src/main/resources/daftar-nasabah.txt");
-
 		try {
 			List<Nasabah> nList = ni.proses();
 			for (Nasabah nasabah : nList) {

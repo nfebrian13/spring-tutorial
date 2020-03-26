@@ -16,7 +16,6 @@ INDEX VERSION 1.131+E:\belajar\artivisi\.metadata\.plugins\org.eclipse.jdt.core
 2019903893.index
 2855899100.index
 4184201189.index
-386622187.index
 2073196050.index
 414978335.index
 2809250744.index
