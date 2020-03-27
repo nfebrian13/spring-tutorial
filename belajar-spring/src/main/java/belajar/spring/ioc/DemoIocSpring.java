@@ -9,5 +9,8 @@ public class DemoIocSpring {
 		ApplicationContext springContainer = new ClassPathXmlApplicationContext("belajar-ioc.xml");
 		NasabahDaoIoc nasabahDao = (NasabahDaoIoc) springContainer.getBean("nd");
 		nasabahDao.simpan();
+		
+		RekeningDao rd = springContainer.getBean(RekeningDao.class);
+		rd.simpan();
 	}
 }
