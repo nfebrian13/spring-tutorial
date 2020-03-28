@@ -551,3 +551,11 @@
 2020-03-28 10:13:05,588 [Worker-74: Launching DemoIocSpring] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2020-03-28 10:13:05,592 [Worker-74: Launching DemoIocSpring] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2020-03-28 10:13:05,603 [Worker-74: Launching DemoIocSpring] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-03-28 10:22:12,749 [Worker-77: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-03-28 10:22:12,757 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-03-28 10:22:12,759 [Worker-77: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-03-28 10:22:12,767 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-03-28 10:22:40,295 [Worker-77: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-03-28 10:22:40,304 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-03-28 10:22:40,306 [Worker-77: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-03-28 10:22:40,314 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

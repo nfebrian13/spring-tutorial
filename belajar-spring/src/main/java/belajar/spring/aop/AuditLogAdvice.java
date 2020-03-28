@@ -10,12 +10,12 @@ import org.springframework.stereotype.Component;
 public class AuditLogAdvice implements MethodInterceptor {
 
 	public Object invoke(MethodInvocation method) throws Throwable {
+		System.out.println("Audit log sebelum proceed");
 		Object hasil = method.proceed();
 		Date sekarang = new Date();
-		
+
 		System.out.println("Method " + method.getMethod().getName() + " dijalankan pada waktu " + sekarang);
-		System.out.println();
-		
+
 		return hasil;
 	}
 

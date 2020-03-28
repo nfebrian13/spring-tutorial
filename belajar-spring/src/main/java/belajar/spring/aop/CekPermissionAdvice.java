@@ -9,11 +9,9 @@ public class CekPermissionAdvice implements MethodInterceptor {
 
 	public Object invoke(MethodInvocation method) throws Throwable {
 		String namaMethod = method.getMethod().getName();
-		
 		System.out.println("Memeriksa ijin akses menjalankan Method " + namaMethod);
-		System.out.println();
-		
 		Object hasil = method.proceed();
+		System.out.println("Cek permission setelah proceed");
 		return hasil;
 	}
 
