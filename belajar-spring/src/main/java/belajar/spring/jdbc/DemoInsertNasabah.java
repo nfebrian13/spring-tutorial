@@ -11,9 +11,9 @@ public class DemoInsertNasabah {
 
 		// Data yang mau diinsert
 		Nasabah n = new Nasabah();
-		n.setNomor("125");
-		n.setNama("Sandi Oktavian");
-		n.setEmail("sandi@gmail.com");
+		n.setNomor("126");
+		n.setNama("Tari Oktavian");
+		n.setEmail("tari@gmail.com");
 
 		// insert menggunakan DAO
 		NasabahDao nd = springContainer.getBean(NasabahDao.class);
