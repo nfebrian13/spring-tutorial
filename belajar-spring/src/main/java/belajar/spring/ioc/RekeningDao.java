@@ -26,8 +26,7 @@ public class RekeningDao {
 
 	public void simpan() {
 		connect();
-		System.out.println("Menyimpan data");
-		disconnect();
+		System.out.println("Menyimpan data rekening ke database " + koneksiDatabase.getUrl());
 	}
 
 	private void disconnect() {

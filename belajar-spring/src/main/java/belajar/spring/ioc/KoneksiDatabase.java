@@ -7,7 +7,7 @@ public class KoneksiDatabase {
 	private String password;
 	
 	public void connect() {
-		System.out.println("Koneksi ke database.");
+		System.out.println("Connect ke database.");
 	}
 	
 	public String getUrl() {
