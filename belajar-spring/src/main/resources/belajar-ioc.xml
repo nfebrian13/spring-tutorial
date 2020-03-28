@@ -27,15 +27,14 @@
 		<property name="password" value="postgres"/>
 	</bean>
 	
-	<!-- 
-		NasabahDaoIoc nd = new NasabahDaoIoc(koneksiDatabase);
-	-->
-	
+	<!-- NasabahDaoIoc nd = new NasabahDaoIoc(koneksiDatabase); -->
 	<bean id="nd" class="belajar.spring.ioc.NasabahDaoIoc">
 		<constructor-arg ref="koneksiDatabase" />
-	</bean>
-	
+	</bean> 
+
 	<!-- component scan, supaya tidak perlu deklarasi object satu persatu -->
+	<!-- <context:component-scan base-package="belajar.spring.ioc"/> -->
+	
 	<context:component-scan base-package="belajar.spring.ioc"/>
 
 </beans>
