@@ -58,12 +58,15 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.spring.aop"/>
 			<item value="com.belajar.spring"/>
 		</list>
 		<list key="name">
+			<item value="belajar-aop"/>
 			<item value="belajar-spring"/>
 		</list>
 		<list key="artifactId">
+			<item value="belajar-aop"/>
 			<item value="belajar-spring"/>
 		</list>
 		<list key="projectNameTemplate">

@@ -19,7 +19,11 @@ public class NasabahDao {
 
 	private static final String SQL_INSERT = "insert into nasabah (nomor,nama,email) values (?,?,?)";
 	private static final String SQL_CARI_SEMUA = "select * from nasabah";
-
+	
+	private static final String SQL_INSERT_REK = "insert into rekening (nomor, nomor_nasabah, saldo) values ('111','123', 100000.00)";
+	private static final String SQL_INSERT_MUT= "insert into mutasi (nomor, nomor_rekening, waktu_transaksi, keterangan, debet, kredit)" + 
+			"values ('001','111', now(), 'Setoran Awal', 100000.00,0)";
+	
 	@Autowired
 	private DataSource dataSource;
 
@@ -31,8 +35,12 @@ public class NasabahDao {
 			ps.setString(2, n.getNama());
 			ps.setString(3, n.getEmail());
 			ps.executeUpdate();
+			
+			conn.createStatement().executeUpdate(SQL_INSERT_REK);
+			conn.createStatement().executeUpdate(SQL_INSERT_MUT);	
 
 			conn.close();
+			
 		} catch (SQLException err) {
 			err.printStackTrace();
 		}
@@ -45,6 +53,12 @@ public class NasabahDao {
 
 		jt.execute("insert into mutasi (nomor, nomor_rekening, waktu_transaksi, keterangan, debet, kredit) "
 				+ "values ('001','222', now(), 'Setoran Awal', 100000.00,0)");
+		
+		/* untuk cek rollback sukses atau tidak.
+		if (3 < 5) {
+			throw new IllegalStateException("Pura puranya error");
+		} */
+		
 	}
 
 	@Transactional
