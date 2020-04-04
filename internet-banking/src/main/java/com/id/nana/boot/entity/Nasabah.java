@@ -1,5 +1,5 @@
 package com.id.nana.boot.entity;
 
-public class Hello {
+public class Nasabah {
 
 }
