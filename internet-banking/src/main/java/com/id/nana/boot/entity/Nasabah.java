@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -32,11 +33,13 @@ public class Nasabah {
 	
 	@NotNull
 	@NotEmpty
+	@Size(min = 3, max = 10)
 	@Column(unique = true)
 	private String nomor;
 	
 	@NotNull
 	@NotEmpty
+	@Size(min = 3, max = 255)
 	private String nama;
 	
 	@NotNull
