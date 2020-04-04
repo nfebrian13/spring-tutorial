@@ -17,6 +17,10 @@ public class NasabahController {
 	@Autowired
 	private NasabahDao nasabahDao;
 
+	/* example : pageable
+	 * http://localhost:8080/nasabah/list?size=1&page=1
+	 * */
+	
 	@GetMapping("/list")
 	public ModelMap tampilkanDataNasabah(Pageable page) {
 		ModelMap mm = new ModelMap();
