@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import belajar.spring.jdbc.NasabahDao;
 
@@ -19,4 +20,14 @@ public class NasabahController {
 		mm.addAttribute("dataNasabah", nasabahDao.cariSemuaNasabah());
 		return mm;
 	}
+
+	@GetMapping("/nasabah/form")
+	public void tampilkanForm() {
+	}
+	
+	@PostMapping
+	public String processForm() {
+		return "redirect:list";
+	}
+
 }
