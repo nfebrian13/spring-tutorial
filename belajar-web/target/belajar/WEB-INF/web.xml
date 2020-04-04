@@ -6,6 +6,18 @@
 
 	<!-- <display-name>belajar-web</display-name> -->
 
+	<!-- instantiate application context di web -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:belajar-jdbc.xml</param-value>
+	</context-param>
+
+	<!-- listener dipanggil ketika ada event tertentu -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<!-- end instantiate application context di web -->
+
 	<servlet>
 		<servlet-name>belajar-web</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>

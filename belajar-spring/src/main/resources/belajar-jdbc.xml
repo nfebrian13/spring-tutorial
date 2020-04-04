@@ -40,7 +40,6 @@
     <!-- Transaction Managament Configuration -->
     <tx:annotation-driven proxy-target-class="true" /> 
 
-	<context:property-placeholder
-		location="database.properties" />
+	<context:property-placeholder location="classpath:database.properties" /> <!-- tamabahin classpath -->
     <context:component-scan base-package="belajar.spring.jdbc"></context:component-scan>
 </beans>
