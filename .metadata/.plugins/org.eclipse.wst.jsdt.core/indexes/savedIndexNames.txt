@@ -1,9 +1,1 @@
 INDEX VERSION 1.4+E:\belajar\artivisi\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1932213133.index
-3960623605.index
-3612226417.index
-144398937.index
-2684363380.index
-3327852129.index
-208144865.index
-943538695.index

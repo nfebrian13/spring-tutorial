@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="E:\belajar\belajar_heroku\catalog"/>
+			<item value="E:\belajar\artivisi\catalog"/>
 			<item value="E:\belajar\artivisi\internet-banking"/>
 			<item value="E:\belajar\artivisi\belajar-oop"/>
 			<item value="E:\belajar\artivisi\belajar-web"/>
