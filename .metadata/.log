@@ -5102,3 +5102,20 @@ Contains: Missing org.springframework.boot:spring-boot-starter-logging:jar:javad
 !MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-logging:jar:javadoc:2.1.1.RELEASE
 !SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-04-10 14:37:55.243
 !MESSAGE Missing org.springframework.boot:spring-boot-starter-logging:jar:javadoc:2.1.1.RELEASE
+
+!ENTRY org.eclipse.jface.text 4 2 2020-04-10 14:55:15.924
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface.text".
+!STACK 0
+java.lang.IllegalStateException: No match available
+	at java.util.regex.Matcher.end(Unknown Source)
+	at org.eclipse.ui.internal.genericeditor.DefaultContentAssistProcessor.findStartingPoint(DefaultContentAssistProcessor.java:84)
+	at org.eclipse.ui.internal.genericeditor.DefaultContentAssistProcessor.computeCompletionProposals(DefaultContentAssistProcessor.java:59)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup$2.run(AsyncCompletionProposalPopup.java:357)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$8(AsyncCompletionProposalPopup.java:354)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
