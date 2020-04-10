@@ -1,0 +1,21 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.spring.trx.mapper.HealthInsuranceMapper">
+
+	<insert id="registerEmployeeHealthInsurance" statementType="CALLABLE"
+		parameterType="com.spring.trx.model.EmployeeHealthInsurance">
+		INSERT INTO employeeHealthInsurance 
+					(empId, 
+					 healthInsuranceSchemeName, 
+					 coverageAmount) 
+				VALUES (#{empId}, #{healthInsuranceSchemeName}, #{coverageAmount})
+	</insert>
+
+	<insert id="deleteEmployeeHealthInsuranceById" statementType="CALLABLE"
+		parameterType="com.spring.trx.model.EmployeeHealthInsurance">
+		DELETE FROM employeeHealthInsurance 
+		       WHERE empId = #{empId}
+	</insert>
+
+</mapper>

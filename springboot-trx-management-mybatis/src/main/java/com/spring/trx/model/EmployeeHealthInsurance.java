@@ -1,5 +1,8 @@
 package com.spring.trx.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class EmployeeHealthInsurance {
 
 	private String empId;

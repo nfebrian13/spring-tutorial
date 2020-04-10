@@ -1,13 +1,13 @@
-package com.trx.mybatis;
+package com.spring.trx;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootTrxManagementMybatisApplication {
+public class TrxManagementApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootTrxManagementMybatisApplication.class, args);
+		SpringApplication.run(TrxManagementApplication.class, args);
 	}
 
 }
