@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.aopalliance.intercept.MethodInterceptor"/>
-<fullyQualifiedTypeName name="org.springframework.dao.DataAccessException"/>
-<fullyQualifiedTypeName name="javax.sql.DataSource"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-<fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
-<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Propagation"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.BeanPropertyRowMapper"/>
-<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
 <fullyQualifiedTypeName name="java.lang.IllegalAccessException"/>
 <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
@@ -60,4 +51,13 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 <fullyQualifiedTypeName name="org.springframework.data.domain.Page"/>
 <fullyQualifiedTypeName name="org.springframework.data.domain.Pageable"/>
+<fullyQualifiedTypeName name="com.management.trx.dao.NasabahDao"/>
+<fullyQualifiedTypeName name="com.management.trx.models.Nasabah"/>
+<fullyQualifiedTypeName name="com.spring.trx.dao.EmployeeDao"/>
+<fullyQualifiedTypeName name="com.spring.trx.dao.HealthInsuranceDao"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="com.spring.trx.service.OrganizationService"/>
+<fullyQualifiedTypeName name="com.spring.trx.model.Employee"/>
+<fullyQualifiedTypeName name="com.spring.trx.model.EmployeeHealthInsurance"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
 </qualifiedTypeNameHistroy>

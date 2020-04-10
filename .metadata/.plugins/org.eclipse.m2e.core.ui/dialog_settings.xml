@@ -19,6 +19,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\belajar\artivisi\trx-management"/>
 			<item value="E:\belajar\artivisi\belajar-oop"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -61,14 +62,18 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.manage.spring"/>
+			<item value="com.management.trx"/>
 			<item value="com.spring.aop"/>
 			<item value="com.belajar.spring"/>
 		</list>
 		<list key="name">
+			<item value="spring-trx-management"/>
 			<item value="belajar-aop"/>
 			<item value="belajar-spring"/>
 		</list>
 		<list key="artifactId">
+			<item value="spring-trx-management"/>
 			<item value="belajar-aop"/>
 			<item value="belajar-spring"/>
 		</list>
@@ -85,6 +90,14 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
