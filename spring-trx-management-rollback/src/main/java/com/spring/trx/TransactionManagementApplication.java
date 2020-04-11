@@ -7,11 +7,12 @@ import org.springframework.context.ApplicationContext;
 import com.spring.trx.model.Employee;
 import com.spring.trx.model.EmployeeHealthInsurance;
 import com.spring.trx.service.OrganizationService;
+import com.spring.trx.service.impl.InvalidInsuranceAmountException;
 
 @SpringBootApplication
 public class TransactionManagementApplication {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InvalidInsuranceAmountException {
 
 		ApplicationContext context = SpringApplication.run(TransactionManagementApplication.class, args);
 		OrganizationService organizationService = context.getBean(OrganizationService.class);
@@ -23,7 +24,7 @@ public class TransactionManagementApplication {
 		EmployeeHealthInsurance employeeHealthInsurance = new EmployeeHealthInsurance();
 		employeeHealthInsurance.setEmpId("emp1");
 		employeeHealthInsurance.setHealthInsuranceSchemeName("premium");
-		employeeHealthInsurance.setCoverageAmount(20000);
+		employeeHealthInsurance.setCoverageAmount(-1);
 
 		organizationService.joinOrganization(emp, employeeHealthInsurance);
 	}
