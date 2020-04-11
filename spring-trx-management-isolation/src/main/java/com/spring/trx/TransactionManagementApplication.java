@@ -17,13 +17,13 @@ public class TransactionManagementApplication {
 		OrganizationService organizationService = context.getBean(OrganizationService.class);
 
 		Employee emp = new Employee();
-		emp.setEmpId("emp1");
-		emp.setEmpName("emp1");
+		emp.setEmpId("emp2");
+		emp.setEmpName("emp2");
 
 		EmployeeHealthInsurance employeeHealthInsurance = new EmployeeHealthInsurance();
-		employeeHealthInsurance.setEmpId("emp1");
+		employeeHealthInsurance.setEmpId("emp2");
 		employeeHealthInsurance.setHealthInsuranceSchemeName("premium");
-		employeeHealthInsurance.setCoverageAmount(20000);
+		employeeHealthInsurance.setCoverageAmount(30000);
 
 		organizationService.joinOrganization(emp, employeeHealthInsurance);
 	}
