@@ -2,12 +2,14 @@ package com.spring.trx.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.spring.trx.dao.EmployeeDao;
 import com.spring.trx.model.Employee;
 import com.spring.trx.service.EmployeeService;
 
 @Service
+@Transactional
 public class EmployeeServiceImpl implements EmployeeService {
 
 	@Autowired
