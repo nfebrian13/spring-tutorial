@@ -24,7 +24,7 @@ public class TransactionManagementApplication {
 		EmployeeHealthInsurance employeeHealthInsurance = new EmployeeHealthInsurance();
 		employeeHealthInsurance.setEmpId("emp1");
 		employeeHealthInsurance.setHealthInsuranceSchemeName("premium");
-		employeeHealthInsurance.setCoverageAmount(-1);
+		employeeHealthInsurance.setCoverageAmount(-1); /* cek untuk validasi coverage < 0 */
 
 		organizationService.joinOrganization(emp, employeeHealthInsurance);
 	}

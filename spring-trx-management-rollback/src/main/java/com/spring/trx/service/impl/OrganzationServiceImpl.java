@@ -20,8 +20,13 @@ public class OrganzationServiceImpl implements OrganizationService {
 	@Autowired
 	HealthInsuranceService healthInsuranceService;
 
+	/** @Transactional(rollbackFor = InvalidInsuranceAmountException.class) 
+	 *  anotation berikut memastikan apablia gagal insert karena validasi 
+	 *  maka semua transaksi akan di rollback
+	 * **/
+	
 	@Override
-	@Transactional
+	@Transactional(rollbackFor = InvalidInsuranceAmountException.class) 
 	public void joinOrganization(Employee employee, EmployeeHealthInsurance employeeHealthInsurance)
 			throws InvalidInsuranceAmountException {
 		employeeService.insertEmployee(employee);
